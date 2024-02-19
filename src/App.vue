@@ -1,30 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <TheNavBar/>
+    <router-view class="margin-container"/>
+    <TheFooter/>
+  </div>
 </template>
 
+<script>
+import TheNavBar from './components/TheNavBar.vue'
+import TheFooter from './components/TheFooter.vue'
+export default  {
+  name: 'app',
+  components: {TheNavBar, TheFooter}
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif !important;
+  background: linear-gradient(80deg, rgba(238,174,202,1) 0%, rgba(242,234,251,1) 100%);
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.margin-container {
+  margin-top: 5rem;
 }
 </style>
