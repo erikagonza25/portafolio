@@ -1,5 +1,5 @@
 <template>
-    <footer class="p-2 d-flex justify-content-around">
+    <footer class="p-2 d-flex justify-content-around flex-direction-mobile">
       <p class="mb-0">Conéctame en las redes sociales:</p>
       <section>
         <a href="https://github.com/erikagonza25" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
@@ -29,5 +29,10 @@ footer a {
 }
 footer p {
   font-weight: 600;
+}
+@media screen and (max-width: 768px) { 
+  .flex-direction-mobile {
+    flex-direction: column;
+  }
 }
 </style>

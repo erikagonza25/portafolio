@@ -80,10 +80,6 @@ export default {
   .margin-container-card {
     margin: 0;
   }
-  .contact p {
-  width: 100%;
-  text-align: center;
-  }
   .flex-direction-mobile {
     flex-direction: column;
   }
