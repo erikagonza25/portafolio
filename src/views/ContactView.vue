@@ -77,7 +77,7 @@ export default {
           this.formData = {}
           Swal.fire({
               title: "Enviado",
-              text: "He recibido tu correo electrónico. Nos pondremos en contacto contigo lo más pronto posible.",
+              text: "He recibido tu correo electrónico. Me pondré en contacto contigo lo más pronto posible.",
               icon: "success"
             })
         })
