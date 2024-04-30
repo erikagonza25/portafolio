@@ -1,11 +1,14 @@
 <template>
-    <footer class="p-2 d-flex justify-content-around flex-direction-mobile">
-      <p class="mb-0">Conéctame en las redes sociales:</p>
+    <footer class="d-flex justify-content-around flex-direction-mobile align-items-center">
       <section>
-        <a href="https://github.com/erikagonza25" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-        <a href="https://www.linkedin.com/in/erika-gonzalez-nunez/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <p class="mb-0">¡Sígueme en las redes sociales y descubre más sobre mi trabajo!</p>
+        <p class="margin-mobile-bottom">Estoy emocionado/a de conectarme contigo:</p>
+      </section> 
+      <section>
+        <a href="https://github.com/erikagonza25" target="_blank"><i class="fa-brands fa-footer fa-github fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/erika-gonzalez-nunez/" target="_blank"><i class="fa-brands fa-footer fa-linkedin fa-2xl"></i></a>
         <a :href="'mailto:' + emailAddress">
-          <i class="fas fa-envelope fa-2xl"></i>
+          <i class="fas fa-footer fa-envelope fa-2xl"></i>
         </a>
       </section>
     </footer>
@@ -22,17 +25,37 @@ export default {
 </script>
 <style>
 footer {
-  background-color: #77777726; 
+  background-color: #fff; 
+  padding: 1rem;
 }
 footer a {
   margin-right: 1rem;
 }
 footer p {
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+.fa-github {
+  color: #333;
+}
+.fa-envelope {
+  color: #71598a;
+}
+.fa-footer:hover{
+ font-size: 2.5em;
+}
+.margin-mobile-bottom {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 768px) { 
   .flex-direction-mobile {
     flex-direction: column;
+  }
+  .margin-mobile-bottom {
+    margin-bottom: 1rem;
   }
 }
 </style>
