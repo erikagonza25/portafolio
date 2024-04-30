@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg fixed-top" :class="activeSection !== 'home' ? 'bg-white' : ''">
+    <nav class="navbar navbar-expand-lg fixed-top" :class="activeSection !== 'home' || !!isMobile ? 'bg-white' : ''">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home"><img src="@/assets/images/logo.png" alt="logo" width="45px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,12 +21,14 @@ export default {
   name: 'App',
   data() {
     return {
-      activeSection: 'home'
+      activeSection: 'home',
+      isMobile: false
     }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
     this.handleScroll()
+    this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
