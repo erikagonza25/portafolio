@@ -28,7 +28,7 @@ Para configurar el proyecto, primero asegúrate de tener Node.js y npm instalado
 
 Para ejecutar el proyecto en modo de desarrollo y habilitar la recarga en caliente, utiliza el siguiente comando:
 
-   ```
+    ```
     npm run serve
     ```
 
