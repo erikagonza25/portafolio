@@ -122,21 +122,25 @@ export default {
     }
   },
   mounted () {
-    const cards = document.querySelectorAll('.fade-up')
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active')
-        } else {
-          entry.target.classList.remove('active')
-        }
+    this.animationForm()
+  },
+  methods: {
+    animationForm() {
+      const cards = document.querySelectorAll('.fade-up')
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active')
+          } else {
+            entry.target.classList.remove('active')
+          }
+        })
       })
-    })
 
-    cards.forEach(card => {
-      observer.observe(card)
-    })
+      cards.forEach(card => {
+        observer.observe(card)
+      })
+    }
   }
 }
 </script>

@@ -5,6 +5,7 @@
     <AboutView class="section" id="about"/>
     <ProjectsView class="section" id="projects"/>
     <ContactView class="section" id="contact"/>
+    <TheButtonScroll/>
     <TheFooter/>
   </div>
 </template>
@@ -16,9 +17,10 @@ import ProjectsView from './views/ProjectsView.vue'
 import ContactView from './views/ContactView.vue'
 import TheNavBar from './components/TheNavBar.vue'
 import TheFooter from './components/TheFooter.vue'
+import TheButtonScroll from './components/TheButtonScroll.vue'
 export default  {
   name: 'app',
-  components: {TheNavBar, TheFooter, ContactView, HomeView, AboutView, ProjectsView}
+  components: {TheNavBar, TheFooter, ContactView, HomeView, AboutView, ProjectsView, TheButtonScroll}
 }
 </script>
 <style>
@@ -51,7 +53,7 @@ body {
 }
 @media screen and (max-width: 768px) { 
   .padding-custom {
-    padding: 1rem;
+    padding: 4rem 1rem 1rem 1rem;
   }
   .custom-small { 
    width: 100%;

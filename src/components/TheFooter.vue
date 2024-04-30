@@ -7,9 +7,6 @@
       <section>
         <a href="https://github.com/erikagonza25" target="_blank"><i class="fa-brands fa-footer fa-github fa-2xl"></i></a>
         <a href="https://www.linkedin.com/in/erika-gonzalez-nunez/" target="_blank"><i class="fa-brands fa-footer fa-linkedin fa-2xl"></i></a>
-        <a :href="'mailto:' + emailAddress">
-          <i class="fas fa-footer fa-envelope fa-2xl"></i>
-        </a>
       </section>
     </footer>
 </template>
@@ -40,9 +37,6 @@ footer p {
 }
 .fa-github {
   color: #333;
-}
-.fa-envelope {
-  color: #71598a;
 }
 .fa-footer:hover{
  font-size: 2.5em;
