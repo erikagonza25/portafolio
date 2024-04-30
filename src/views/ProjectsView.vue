@@ -115,7 +115,7 @@ export default {
             {name : 'fa-github', color: '#333'},
             {name : 'fa-figma', color: '#333333'},
           ],
-          url: 'https://erikagonza25.github.io/LIM014-card-validation/',
+          url: 'https://card-validation-erika.vercel.app/',
           img: 'assets/images/card.png'
         }
       ]
