@@ -101,7 +101,7 @@ export default {
             {name : 'fa-github', color: '#333'},
             {name : 'fa-figma', color: '#333333'},
           ],
-          url: 'https://erikagonza25.github.io/LIM014-data-lovers/',
+          url: 'https://erika-league-of-legends.vercel.app/',
           img: 'assets/images/league.png'
         },
         {
