@@ -55,7 +55,7 @@ export default {
             {name : 'fa-vuejs', color: '#41b883'},
             {name : 'fa-github', color: '#333'}
           ],
-          url: 'https://rick-and-morty-erika.netlify.app/',
+          url: 'https://rick-and-morty-erika.vercel.app/',
           img: 'assets/images/rick.png'
         },
         {
